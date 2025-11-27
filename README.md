@@ -1,2 +1,2 @@
 # Sistema-Ingressos
-Projeto da disciplina de APII que trata de ingressos para festas.
+Projeto da disciplina de APII que trata de compra de ingressos para festas.
