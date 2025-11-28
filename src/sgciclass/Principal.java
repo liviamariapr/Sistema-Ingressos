@@ -20,7 +20,7 @@ public class Principal extends Application {
 
             Image imagemIconeDaJanela = new Image("icons/icon_logo.png");
             stage.getIcons().add(imagemIconeDaJanela);// define o icone da janela
-            stage.setTitle("Acadêmico");
+            stage.setTitle("SGCI");
             stage.setResizable(false);
 
             stage.setScene(scene);
