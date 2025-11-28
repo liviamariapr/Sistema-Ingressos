@@ -3,7 +3,6 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextField?>
 <?import javafx.scene.effect.Glow?>
 <?import javafx.scene.effect.Light.Distant?>
 <?import javafx.scene.effect.Lighting?>
@@ -17,10 +16,10 @@
    <children>
       <ImageView fitHeight="70.0" fitWidth="70.0" layoutX="23.0" layoutY="25.0" pickOnBounds="true" preserveRatio="true" AnchorPane.bottomAnchor="305.2" AnchorPane.leftAnchor="25.0" AnchorPane.rightAnchor="507.0" AnchorPane.topAnchor="25.0">
          <image>
-            <Image url="@../../../../tickts.png" />
+            <Image url="@../icons/tickets.png" />
          </image>
       </ImageView>
-      <Label layoutX="123.0" layoutY="42.0" prefHeight="18.0" prefWidth="246.0" style="-fx-font-weight: bold;" text="Comprar Ingresso">
+      <Label layoutX="123.0" layoutY="42.0" prefHeight="35.0" prefWidth="326.0" style="-fx-font-weight: bold;" text="Método de Pagamento">
          <font>
             <Font size="24.0" />
          </font>
@@ -42,8 +41,8 @@
             <Insets />
          </opaqueInsets>
       </Label>
-      <Button layoutX="533.0" layoutY="360.0" mnemonicParsing="false" text="Voltar" />
-      <Label layoutX="71.0" layoutY="95.0" prefHeight="27.0" prefWidth="149.0" style="-fx-font-weight: bold;" text="Ingresso da festa:">
+      <Button layoutX="533.0" layoutY="360.0" mnemonicParsing="false" text="Voltar" AnchorPane.bottomAnchor="14.399999999999999" AnchorPane.rightAnchor="19.0" />
+      <Label layoutX="71.0" layoutY="95.0" prefHeight="27.0" prefWidth="149.0" style="-fx-font-weight: bold;" text="Valor a pagar:">
          <font>
             <Font size="18.0" />
          </font>
@@ -65,14 +64,14 @@
             <Insets />
          </opaqueInsets>
       </Label>
-      <Button layoutX="269.0" layoutY="287.0" mnemonicParsing="false" text="Comprar" />
-      <Label layoutX="234.0" layoutY="95.0" prefHeight="18.0" prefWidth="132.0" text="nomeDaFesta" textAlignment="CENTER">
+      <Button layoutX="248.0" layoutY="286.0" mnemonicParsing="false" text="Finalizar Compra" />
+      <Label alignment="CENTER" layoutX="137.0" layoutY="132.0" prefHeight="30.0" style="-fx-background-color: white;" text="Pix" AnchorPane.leftAnchor="137.0" AnchorPane.rightAnchor="136.60000000000002" />
+      <Label layoutX="212.0" layoutY="95.0" prefHeight="18.0" prefWidth="132.0" text="valorDoIngresso" textAlignment="CENTER">
          <font>
             <Font size="18.0" />
          </font>
       </Label>
-      <Label alignment="CENTER" layoutX="137.0" layoutY="242.0" opacity="0.76" prefHeight="30.0" style="-fx-background-color: white;" text="valor" AnchorPane.leftAnchor="137.0" AnchorPane.rightAnchor="136.60000000000002" AnchorPane.topAnchor="242.0" />
-      <TextField alignment="CENTER" layoutX="136.0" layoutY="142.0" prefHeight="30.0" text="Tipo" AnchorPane.leftAnchor="136.0" AnchorPane.rightAnchor="137.60000000000002" />
-      <TextField alignment="CENTER" layoutX="225.0" layoutY="192.0" prefHeight="30.0" prefWidth="209.0" text="Quantidade" AnchorPane.leftAnchor="137.0" AnchorPane.rightAnchor="137.0" />
+      <Label alignment="CENTER" layoutX="287.0" layoutY="185.0" prefHeight="30.0" style="-fx-background-color: white;" text="Boleto" AnchorPane.leftAnchor="137.0" AnchorPane.rightAnchor="137.0" AnchorPane.topAnchor="180.0" />
+      <Label alignment="CENTER" layoutX="137.0" layoutY="234.0" prefHeight="30.0" style="-fx-background-color: white;" text="Outro" AnchorPane.leftAnchor="137.0" AnchorPane.rightAnchor="136.60000000000002" AnchorPane.topAnchor="230.0" />
    </children>
 </AnchorPane>
