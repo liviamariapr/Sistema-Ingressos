@@ -4,7 +4,7 @@ public class Meia extends Ingresso {
     private static final double DESCONTO = 0.50;
 
     public Meia(Festa festa, double valor, int quantidade, String tipo) {
-        super(festa, quantidade, valor, tipo);
+        super(festa, valor, quantidade, tipo);
         super.setTipo("Meia");
     }
 
