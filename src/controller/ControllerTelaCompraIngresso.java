@@ -64,7 +64,7 @@ public class ControllerTelaCompraIngresso {
             bancoDeDadosFestas.updateFesta(festa);
 
             try{
-                trocarTela(anchorPaneCompraIngresso, "/View/TelaFormaDePagamento.fxml");
+                trocarTela(anchorPaneCompraIngresso, "/view/TelaFormaDePagamento.fxml");
             } catch(IOException ex){
                 System.err.println("Erro ao tentar abrir a etapa de pagamento: " + ex.getMessage());
                 ex.printStackTrace();
@@ -89,7 +89,7 @@ public class ControllerTelaCompraIngresso {
     @FXML
     void voltarFestas(ActionEvent event) {
         try{
-                trocarTela(anchorPaneCompraIngresso, "/View/TelaIngressosDisponiveis.fxml");
+                trocarTela(anchorPaneCompraIngresso, "/view/TelaIngressosDisponiveis.fxml");
         } catch(IOException ex){
             System.err.println("Erro ao tentar voltar: " + ex.getMessage());
                 ex.printStackTrace();

@@ -54,13 +54,13 @@ public class ControllerTelaIngressosDisponiveis {
 
     private void carregarTabelaFesta() {
         //Liga as colunas da tabela (TableColumn) aos atributos (propriedades) dos objetos que estão sendo exibidos.
-        columnId.setCellValueFactory(new PropertyValueFactory("id")); //Liga a coluna tableColumnFestaId ao método getId() do objeto Festa.
-        columnNome.setCellValueFactory(new PropertyValueFactory("nome")); //Liga a coluna tableColumnFestaNome ao método getNome() do objeto Festa.
-        columnQuantidade.setCellValueFactory(new PropertyValueFactory("ingressos.quantidade"));
+        columnId.setCellValueFactory(new PropertyValueFactory<Festa, Integer>("id")); //Liga a coluna tableColumnFestaId ao método getId() do objeto Festa.
+        columnNome.setCellValueFactory(new PropertyValueFactory<Festa, String>("nome")); //Liga a coluna tableColumnFestaNome ao método getNome() do objeto Festa.
+        columnQuantidade.setCellValueFactory(new PropertyValueFactory<Festa, Integer>("quantidade"));
 
         //carregar os dados (lista de Festas) na tabela da interface
         ArrayList<Festa> listaFestas = bancoDeDadosFestas.getAllFestas();
-        ObservableList obsListFesta = FXCollections.observableArrayList(listaFestas);
+        ObservableList<Festa> obsListFesta = FXCollections.observableArrayList(listaFestas);
         tabelaFestas.setItems(obsListFesta);
     }
 
@@ -93,7 +93,7 @@ public class ControllerTelaIngressosDisponiveis {
     @FXML
     void voltarCliente(ActionEvent event) {
         try{
-                trocarTela(anchorPaneIngressos, "/View/TelaCadastroCliente.fxml");//tem que mudar para Tela Cliente!
+                trocarTela(anchorPaneIngressos, "/view/TelaCadastroCliente.fxml");//tem que mudar para Tela Cliente!
         } catch(IOException ex){
             System.err.println("Erro ao tentar voltar: " + ex.getMessage());
                 ex.printStackTrace();

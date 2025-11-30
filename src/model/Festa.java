@@ -29,6 +29,14 @@ public class Festa implements Serializable {
         return id;
     }
 
+    public String getData(){
+        return data;
+    }
+
+    public String getDescricao(){
+        return descricao;
+    }
+
     public Ingresso getIngresso(){
         return ingresso;
     }

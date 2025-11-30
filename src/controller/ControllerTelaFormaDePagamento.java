@@ -40,8 +40,6 @@ public class ControllerTelaFormaDePagamento {
     private AnchorPane anchorPaneMetodosPagamento;
 
     private Festa festa;
-    private Meia meia;
-    private Inteira inteira;
 
     @FXML
     void realizarCompra(ActionEvent event) {
