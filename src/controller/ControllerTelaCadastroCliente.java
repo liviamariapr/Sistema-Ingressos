@@ -1,11 +1,11 @@
-package Controller;
+package controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 
-public class TelaCadastroAdministradorController {
+public class ControllerTelaCadastroCliente {
 
     @FXML
     private Button buttonSalvarClienteCadastro;
