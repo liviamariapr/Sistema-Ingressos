@@ -9,7 +9,7 @@ import javafx.scene.input.MouseEvent;
 public class TelaClienteController {
 
     @FXML
-    private ImageView imageDeletarFesta;
+    private ImageView imageDeletarIngresso;
 
     @FXML
     private ImageView imageInformacoesIngressos;

@@ -79,7 +79,7 @@ public class TelaCadastroClienteController {
                     Cliente cliente = new Cliente(nome, cpf, telefone, email, senha);
                     repositorioCliente.createCliente(cliente);
                     repositorioCadastro.createCadastro(cliente);
-                    FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/telaCliente.fxml"));
+                    FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/TelaCliente.fxml"));
                     Parent root = loader.load();
                     Scene novaCena = new Scene(root);
 
