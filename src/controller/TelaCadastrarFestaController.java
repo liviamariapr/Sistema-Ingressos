@@ -4,6 +4,7 @@ import java.io.IOException;
 import java.net.URL;
 import java.util.ResourceBundle;
 
+import data.RepositorioFesta;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -15,8 +16,7 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
-import data.*;
-import model.*;
+import model.Festa;
 
 public class TelaCadastrarFestaController {
 
@@ -39,7 +39,7 @@ public class TelaCadastrarFestaController {
     private Label labelStatusCadastro;
 
     @FXML
-    private AnchorPane anchorPaneAdm;
+    private AnchorPane anchorPaneCadastraFesta;
 
     @FXML
     private TextField textFieldValorDoIngresso;
@@ -98,7 +98,7 @@ public class TelaCadastrarFestaController {
     @FXML
     void voltarAdm(ActionEvent event) {
         try{
-                trocarTela(anchorPaneAdm, "/View/TelaAdministrador.fxml");
+                trocarTela(anchorPaneCadastraFesta, "/View/TelaAdministrador.fxml");
         } catch(IOException ex){
             System.err.println("Erro ao tentar voltar: " + ex.getMessage());
                 ex.printStackTrace();

@@ -3,9 +3,9 @@ package model;
 import java.io.Serializable;
 
 public class Festa implements Serializable {
-    private Ingresso ingresso;
+    private Ingresso ingresso= new Ingresso(1,1,"n/a");
     private String nome, data, descricao;
-    private int id, qtdIngresso;
+    private int id;
 
     public Festa(String nome, String data, String descricao){
         this.nome=nome;
@@ -29,11 +29,15 @@ public class Festa implements Serializable {
     }
 
     public void setQuantidade(int quantidade){//setter pra a quantidade de ingressos do objeto ingresso que é do objeto festa
-        ingresso.setQuantidade(quantidade);
+        if (ingresso != null) {
+            ingresso.setQuantidade(quantidade);
+        }
     }
 
     public void setValor(double valor){//setter pra o valor do ingresso do objeto ingresso que é do objeto festa
-        ingresso.setValor(valor);
+        if (ingresso != null) {
+            ingresso.setValor(valor);
+        }
     }
 
     public String getNome(){
