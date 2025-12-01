@@ -1,3 +1,4 @@
+
 package controller;
 
 import java.io.IOException;
@@ -21,6 +22,7 @@ import data.*;
 public class TelaLoginController {
     
     RepositorioCadastro repositorioCadastro = new RepositorioCadastro();
+
 
     @FXML
     private Button buttonAcessar;
@@ -64,6 +66,7 @@ public class TelaLoginController {
             ex.printStackTrace();
         }
         }
+
     }
 
     @FXML
@@ -75,6 +78,7 @@ public class TelaLoginController {
     void handleDigitarSenha(ActionEvent event) {
 
     }
+
 
 
     private void abrirTela(String caminhoFXML) throws IOException {
@@ -89,4 +93,5 @@ public class TelaLoginController {
         Stage atual = (Stage) buttonAcessar.getScene().getWindow();
         atual.close();
     }
+
 }

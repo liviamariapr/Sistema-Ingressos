@@ -51,7 +51,9 @@
                   <Insets right="70.0" />
                </GridPane.margin>
             </TextField>
+
             <Label alignment="TOP_LEFT" text=" Telefone:" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="2" GridPane.valignment="BOTTOM" />
+
             <TextField fx:id="textFieldTelefone" prefHeight="25.0" prefWidth="130.0" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="3" GridPane.valignment="TOP" />
             <TextField fx:id="textFieldEmail" prefHeight="25.0" prefWidth="340.0" GridPane.halignment="LEFT" GridPane.rowIndex="5" GridPane.valignment="TOP">
                <GridPane.margin>
@@ -67,10 +69,12 @@
             <Label text="Senha:" GridPane.columnIndex="1" GridPane.halignment="LEFT" GridPane.rowIndex="4" GridPane.valignment="BOTTOM" />
          </children>
       </GridPane>
+
       <Button fx:id="buttonSalvarAdministradorCadastro" layoutX="482.0" layoutY="343.0" mnemonicParsing="false" onAction="#handleButtonSalvarClienteCadastro" style="-fx-background-color: #472286;" text="Salvar" textFill="#110404" AnchorPane.bottomAnchor="25.0" AnchorPane.leftAnchor="530.0" AnchorPane.topAnchor="350.0">
          <cursor>
             <Cursor fx:constant="HAND" />
          </cursor></Button>
       <Label fx:id="labelStatusCadastro" layoutX="40.0" layoutY="342.0" />
+
    </children>
 </AnchorPane>

@@ -19,10 +19,13 @@ import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
+
 public class TelaCadastroAdministradorController {
 
     @FXML
+
     private Button buttonSalvarAdministradorCadastro;
+
 
     @FXML
     private TextField textFieldCPF;
@@ -101,4 +104,5 @@ public class TelaCadastroAdministradorController {
                 labelStatusCadastro.setText("Dados inválidos");
         }
     }
+
 }

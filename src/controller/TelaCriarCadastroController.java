@@ -1,3 +1,4 @@
+
 package controller;
 
 import javafx.event.ActionEvent;
@@ -8,6 +9,7 @@ import javafx.scene.control.Button;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
+
 public class TelaCriarCadastroController {
 
     @FXML
@@ -17,6 +19,7 @@ public class TelaCriarCadastroController {
     private Button buttonCriarNovoCliente;
 
     @FXML
+
     void handleButtonCriarNovoCliente(ActionEvent event) throws Exception {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("/View/TelaCadastroCliente.fxml"));
         AnchorPane page = loader.load();
@@ -41,6 +44,7 @@ public class TelaCriarCadastroController {
         
         Stage atual = (Stage) ((Button) event.getSource()).getScene().getWindow();
         atual.close();
+
     }
 
 }
