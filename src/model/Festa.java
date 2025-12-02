@@ -3,17 +3,20 @@ package model;
 import java.io.Serializable;
 
 public class Festa implements Serializable {
+
     private Ingresso ingresso;
     private String nome, data, descricao;
     private int id, qtdIngresso;
+    private String adminCpf;
 
     public Festa(String nome, String data, String descricao, int qtdIngresso){
-        this.nome=nome;
-        this.data=data;
-        this.descricao=descricao;
-        this.qtdIngresso= qtdIngresso;
+        this.nome = nome;
+        this.data = data;
+        this.descricao = descricao;
+        this.qtdIngresso = qtdIngresso;
     }
 
+    
     public int getQuantidade(){
         if (ingresso != null) {
             return ingresso.getQuantidade();
@@ -36,6 +39,7 @@ public class Festa implements Serializable {
     public String getDescricao(){
         return descricao;
     }
+
     public int getQtdIngresso() {
         return qtdIngresso;
     }
@@ -44,11 +48,21 @@ public class Festa implements Serializable {
         return ingresso;
     }
 
+    
+    public String getAdminCpf() {
+        return adminCpf;
+    }
+
+    
     public void setId(int id){
-        this.id=id;
+        this.id = id;
     }
 
     public void setIngresso(Ingresso ingresso){
-        this.ingresso=ingresso;
+        this.ingresso = ingresso;
+    }
+
+    public void setAdminCpf(String adminCpf) {
+        this.adminCpf = adminCpf;
     }
 }
