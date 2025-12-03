@@ -6,6 +6,7 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
+import javafx.scene.image.Image;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 
@@ -27,6 +28,8 @@ public class TelaCriarCadastroController {
         Stage stage = new Stage();
         stage.setTitle("Sistema");
         stage.setScene(new Scene(page));
+        Image imagemIconeDaJanela = new Image("/icons/icone_logo.png");
+        stage.getIcons().add(imagemIconeDaJanela);
         stage.show();
         
         Stage atual = (Stage) ((Button) event.getSource()).getScene().getWindow();
@@ -40,6 +43,8 @@ public class TelaCriarCadastroController {
         Stage stage = new Stage();
         stage.setTitle("Sistema");
         stage.setScene(new Scene(page));
+        Image imagemIconeDaJanela = new Image("/icons/icone_logo.png");
+        stage.getIcons().add(imagemIconeDaJanela);
         stage.show();
         
         Stage atual = (Stage) ((Button) event.getSource()).getScene().getWindow();

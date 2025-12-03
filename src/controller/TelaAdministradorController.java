@@ -75,6 +75,8 @@ public class TelaAdministradorController {
         Stage stage = new Stage();
         stage.setTitle("Sistema");
         stage.setScene(new Scene(page));
+        Image imagemIconeDaJanela = new Image("/icons/icone_logo.png");
+        stage.getIcons().add(imagemIconeDaJanela);
         stage.show();
         
         Stage atual = (Stage) ((ImageView) event.getSource()).getScene().getWindow();
@@ -142,6 +144,8 @@ public class TelaAdministradorController {
             Stage stage = new Stage();
             stage.setTitle("Editar Festa");
             stage.setScene(new Scene(root));
+            Image imagemIconeDaJanela = new Image("/icons/icone_logo.png");
+            stage.getIcons().add(imagemIconeDaJanela);
             stage.setOnHidden(e -> carregarTabelaFesta()); // Recarrega tabela quando fechar
             stage.show();
             
@@ -159,6 +163,8 @@ public class TelaAdministradorController {
         Stage stage = new Stage();
         stage.setTitle("Sistema de Ingressos");
         stage.setScene(new Scene(root));
+        Image imagemIconeDaJanela = new Image("/icons/icone_logo.png");
+        stage.getIcons().add(imagemIconeDaJanela);
         stage.show();
         
         // Fecha a tela de administrador
