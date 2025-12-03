@@ -140,7 +140,7 @@ public class ControllerTelaFormaDePagamento {
     @FXML
     void voltarInfoIngresso(ActionEvent event) {
         try{
-                trocarTela(anchorPaneTelaPagamento, "/view/TelaCompraIngresso.fxml");
+                trocarTela(anchorPaneTelaPagamento, "/view/TelaIngressosDisponiveis.fxml");
         } catch(IOException ex){
             System.err.println("Erro ao tentar voltar: " + ex.getMessage());
                 ex.printStackTrace();
